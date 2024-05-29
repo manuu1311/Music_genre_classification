@@ -64,4 +64,5 @@ def hist_plot(loss,acc, loss_valid,acc_valid):
     ax[1].plot(acc_valid,label='validation accuracy')
     ax[1].set_xlabel('Epoch')
     ax[1].legend()
+    ax[1].set_ylim(ymin=0,ymax=100)
     plt.show()
