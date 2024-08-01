@@ -4,7 +4,7 @@ The paper presents a novel architecture based on CNN for music genre classificat
 
  # PROCEDURE
  ## Split audio
- All audio clips are split into 5 different clips. This method allows to have a bigger dataset without losing too much information. All clips belonging to a song are all either in the training set or in the validation set. This step is crucial in order to maintain the independence between the two datasets.
+ All audio clips are split into 5 different clips. This method allows to have a bigger dataset without losing too much information. All clips belonging to the same song are all either in the training set or in the validation set. This step is crucial in order to maintain the independence between the two datasets.
  ## Conversion to spectrogram
  As is often the case when dealing with audios using a neural network, we convert them to spectrograms and treat them as images. This is because architectures designed for image processing are more advanced, since the interest is bigger in that field.
  <br><br>
