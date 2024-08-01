@@ -26,5 +26,5 @@ We achieved a total accuracy of 76% in the training set and 66.7% in the validat
 <img src="imgs/conf_matrix.png">
 <img src="imgs/diagram.png">
 <br><br>
-The confusion matrix reveals that the model has troubles differentiating between metal, reggae, and country. Most of the error came from these 3 genres, while the confusion matrix  otherwise indicates strong performance. Looking at the mean spectrograms, these 3 genres have clear similarities. Instead, looking at jazz and classical, they have the most distinct spectrograms, with clear differences with respect to the others. This is confirmed by the fact that the model performs best for these 2 models in every metric.
+The confusion matrix reveals that the model has troubles differentiating between metal, reggae, and country. Most of the error came from these 3 genres, while the confusion matrix  otherwise indicates strong performance. Looking at the mean spectrograms, these 3 genres have clear similarities. Instead, looking at jazz and classical, they have the most distinct spectrograms, with clear differences with respect to the others. This is reflected by the fact that the model performs best for these 2 models in every metric.
 
