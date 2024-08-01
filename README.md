@@ -10,7 +10,9 @@ The paper presents a novel architecture based on CNN for music genre classificat
  <img src="imgs/spec_example.png">
  # Data augmentation
  Even though spectrograms are treated by neural networks as images, classical augmentation techniques designed for images like rotating or flipping are not effective on spectrograms. Instead, spectrogram augmentation techniques fall into two categories: those that work on the waveform (more powerful but computationally more demanding, as the spectrogram must be calculated for each sample at every epoch) and those that work on the spectrogram itself (less powerful but lighter). In this project, we used the second approach because of computational constraints. 
-  <img src="imgs/augment_example.png">
+  <img src="imgs/augment_example.png">  
+
+      
    <img src="imgs/allaugment.png">
  ## Genres
  The GTZAN includes 10 different music genres. Here are the mean spectrograms for each one.
@@ -19,6 +21,6 @@ The paper presents a novel architecture based on CNN for music genre classificat
  ## RESULTS
 We achieved a total accuracy of 76% in the training set and 66.7% in the validation set with a model of 3.4M parameters (~13MBs)
 <img src="imgs/conf_matrix.png" width="450" height="450">
-<img src="imgs/diagram.png" width="450" height="450">
+<img src="imgs/diagram.png" width="550" height="450">
 The confusion matrix reveals that the model has troubles to differentiate between metal, reggae, and country. Most of the error came from these 3 genres, while the confusion matrix  otherwise indicates strong performance. Looking at the mean spectrograms, these 3 genres have clear similarities. Instead, looking at jazz and classical, they have the most distinct spectrograms, with clear differences with respect to the others. This is confirmed by the fact that the model performs best for these 2 models in every metric.
 
