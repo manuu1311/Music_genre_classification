@@ -6,7 +6,7 @@ The paper presents a novel architecture based on CNN for music genre classificat
  ## Split audio
  All audio clips are split into 5 different clips. This method allows to have a bigger dataset without losing too much information. All clips belonging to the same song are all either in the training set or in the validation set. This step is crucial in order to maintain the independence between the two datasets.
  ## Conversion to spectrogram
- As is often the case when dealing with audios using a neural network, we convert them to spectrograms and treat them as images. This is because architectures designed for image processing are more advanced, since the interest is bigger in that field.
+ As is often the case when dealing with audios using a neural networks, we convert them to spectrograms and treat them as images. This is because architectures designed for image processing are more advanced, since the interest is bigger in that field.
  <br><br>
  <img src="imgs/spec_example.png">
  ## Data augmentation
@@ -26,5 +26,5 @@ We achieved a total accuracy of 76% in the training set and 66.7% in the validat
 <img src="imgs/conf_matrix.png">
 <img src="imgs/diagram.png">
 <br><br>
-The confusion matrix reveals that the model has troubles differentiating between metal, reggae, and country. Most of the error came from these 3 genres, while the confusion matrix  otherwise indicates strong performance. Looking at the mean spectrograms, these 3 genres have clear similarities. Instead, looking at jazz and classical, they have the most distinct spectrograms, with clear differences with respect to the others. This is reflected by the fact that the model performs best for these 2 models in every metric.
+The confusion matrix reveals that the model has troubles differentiating between metal, reggae, and country. Most of the error came from these 3 genres, while the confusion matrix  otherwise indicates strong performance. Looking at the mean spectrograms, these 3 genres have clear similarities. Instead, looking at jazz and classical, they have the most distinct spectrograms, with clear differences with respect to the others. This is reflected by the fact that the model performs best for these 2 genres in every metric.
 
