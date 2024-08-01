@@ -10,7 +10,7 @@ The paper presents a novel architecture based on CNN for music genre classificat
  <br><br>
  <img src="imgs/spec_example.png">
  ## Data augmentation
- Even though spectrograms are treated by neural networks as images, classical augmentation techniques designed for images like rotating or flipping are not effective on spectrograms. Instead, spectrogram augmentation techniques fall into two categories: those that work on the waveform (more powerful but computationally more demanding, as the spectrogram must be calculated for each sample at every epoch) and those that work on the spectrogram itself (less powerful but lighter). In this project, we used the second approach because of computational constraints. 
+ Even though spectrograms are treated by neural networks as images, classical augmentation techniques designed for images like rotating or flipping are not effective on spectrograms. Instead, spectrogram augmentation techniques fall into two categories: those that work on the waveform (more powerful but computationally more demanding, as the spectrogram must be calculated for each sample at every epoch) and those that work on the spectrogram itself (less powerful but more efficient). In this project, we used the second approach because of computational constraints. 
  <br><br>
   <img src="imgs/augment_example.png">     
   <br><br>
